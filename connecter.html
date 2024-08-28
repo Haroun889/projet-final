@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="insc.css">
+
+    <link rel="preconnect" href="https://fonts.google.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>casa sport</title>
+</head>
+<body class="mainBody">
+    <header>
+        <a href="index.html" class="logo" style="color: white;">Football.Store</a>
+        
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produit.html">Produit</a></li>
+            <li><a href="connecter.html">Connecter</a></li>
+
+           
+        </ul>
+    </header>
+    <div class="hero">
+        <video autoplay muted loop id="myVideo">
+            <source src="https://player.vimeo.com/external/333365608.sd.mp4?s=128ff523b817ceebe4185389ae7cb8863ea0ae0a&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+          </video>
+        <div class="form-box">
+            
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">register</button>
+            </div>
+            <div class="social-icons">
+                <img src="https://cdn-icons-png.flaticon.com/128/3488/3488287.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/3488/3488309.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/536/536453.png">
+            
+    
+            </div>
+            <form  id="login"class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="Email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+       
+
+    </div>
+    <script>
+        var x= document.getElementById("login");
+        var y= document.getElementById("register");
+        var z= document.getElementById("btn");
+        function register(){
+            x.style.left="-400px"
+            y.style.left="50px"
+            z.style.left="110px"
+        }
+        function login(){
+            x.style.left="50px"
+            y.style.left="450px"
+            z.style.left="0"
+        }
+    </script>
+</body>
+
+
+</html>
